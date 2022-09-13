@@ -1,7 +1,8 @@
 
 import { View, StyleSheet, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
-import { Todolist } from '../component/todolist';
+import { Todolistbox } from '../component/todolist';
+import { Cardbox } from '../component/cardreview';
 
 export function ToDoListHome() {
     return (
@@ -10,11 +11,18 @@ export function ToDoListHome() {
                 <Icon name='time-slot' size={30} color="white" />
                 <Text style={styles.bodytext}>To Day List</Text>
             </View>
-            <Todolist title='ทำการบ้านวิชา อังคราร' content='ทำงานเกี่ยวสัตว์ปีกสัตวปีก'/>
+            <View style={styles.column}>
+                <Todolistbox title='ทำการบ้านวิชา อังคราร' content='ทำงานเกี่ยวสัตว์ปีกสัตวปีก' />
+                <Cardbox/>
+            </View>
         </View>
     );
 }
 const styles = StyleSheet.create({
+    column: {
+        flexDirection: 'column',
+
+    },
     row: {
         flexDirection: 'row',
         marginBottom: 24,
@@ -25,7 +33,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.4,
         shadowRadius: 4,
-        
+
         elevation: 12,
     },
     container: {

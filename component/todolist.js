@@ -1,7 +1,7 @@
 import { View , StyleSheet } from 'react-native';
 import { Card , Title , Paragraph  } from 'react-native-paper';
 
-export const Todolist = (props) => {
+export const Todolistbox = (props) => {
     return (
         <View style={styles.container}>
             <Card>
