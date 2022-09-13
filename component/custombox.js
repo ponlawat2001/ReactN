@@ -8,7 +8,7 @@ export const Boxset = (input) => {
     );
 }
 
-export function CustomboxBro(props) {
+export const CustomboxBro = (props) => {
     return (
 
             <View style={{...styles.Column , alignContent: props.align}}>

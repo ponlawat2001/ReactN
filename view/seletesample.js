@@ -4,7 +4,7 @@ import { ButtonBox } from '../component/button';
 export function SeleteSample({ navigation }) {
     return (
         <View style={styles.container}>
-            <View style={{ padding: 8 }}>
+            <View style={{ padding: 8}}>
                 <Text style={styles.bodytext}>Please Press some Button</Text>
             </View>
             <View style={{flex: 1}}>
