@@ -10,6 +10,7 @@ import { ToDoListHome } from './view/todolist';
 import { CustomNavigationBar } from './component/customnavigatebar';
 import { ToDoListAdd } from './view/todolist_addlist';
 
+
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
       <Stack.Navigator
         initialRouteName='SeleteSample'
         screenOptions={{
+          
           header: (props) => <CustomNavigationBar {...props} />,
+          
         }}>
         <Stack.Screen
           name='SeleteSample'
@@ -34,11 +37,7 @@ function App() {
           name='ToDoListHome'
           component={ToDoListHome}
           options={{
-            title: 'ToDoList', 
-            defaultNavigationOptions: {
-              title: 'Aligned Center',
-              headerTitleAlign: 'center'
-            }
+            title: 'To Day List', 
           }}
         />
         <Stack.Screen
