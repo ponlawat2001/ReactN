@@ -11,11 +11,8 @@ export function ToDoListHome() {
                 <Icon name='time-slot' size={30} color="white" />
                 <Text style={styles.bodytext}>To Day List</Text>
             </View>
-                <Todolistbox title='ทำการบ้านวิชา อังคราร' content='ทำงานเกี่ยวสัตว์ปีกสัตวปีก' />
-                <Cardbox/>
-
-           
-                
+            <Todolistbox title='ทำการบ้านวิชา อังคราร' content='ทำงานเกี่ยวสัตว์ปีกสัตวปีก' />
+            <Cardbox />
         </View>
     );
 }
