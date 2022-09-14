@@ -1,5 +1,5 @@
-import { View , StyleSheet } from 'react-native';
-import { Card , Title , Paragraph  } from 'react-native-paper';
+import { View, StyleSheet } from 'react-native';
+import { Card, Title, Paragraph } from 'react-native-paper';
 
 export const Todolistbox = (props) => {
     return (
@@ -11,12 +11,12 @@ export const Todolistbox = (props) => {
                 </Card.Content>
             </Card>
         </View>
+
     );
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        width: 300
+    container: {
+        width: '95%'
     }
 })

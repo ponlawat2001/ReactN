@@ -11,18 +11,15 @@ export function ToDoListHome() {
                 <Icon name='time-slot' size={30} color="white" />
                 <Text style={styles.bodytext}>To Day List</Text>
             </View>
-            <View style={styles.column}>
                 <Todolistbox title='ทำการบ้านวิชา อังคราร' content='ทำงานเกี่ยวสัตว์ปีกสัตวปีก' />
                 <Cardbox/>
-            </View>
+
+           
+                
         </View>
     );
 }
 const styles = StyleSheet.create({
-    column: {
-        flexDirection: 'column',
-
-    },
     row: {
         flexDirection: 'row',
         marginBottom: 24,
@@ -40,7 +37,8 @@ const styles = StyleSheet.create({
         padding: 24,
         backgroundColor: '#AAC4FF',
         alignItems: 'center',
-        justifyContent: 'flex-start',
+        // justifyContent: 'flex-start',
+        // flexWrap: 'wrap',
         flexDirection: 'column',
         flex: 1
     },

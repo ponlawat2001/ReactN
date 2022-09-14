@@ -7,13 +7,18 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SeleteSample } from './view/seletesample';
 import { AlignContent } from './view/aligncontent';
 import { ToDoListHome } from './view/todolist';
+import { CustomNavigationBar } from './component/customnavigatebar';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='SeleteSample'>
+      <Stack.Navigator 
+      initialRouteName='SeleteSample'
+      screenOptions={{
+        header: (props) => <CustomNavigationBar {...props} />,
+      }}>
         <Stack.Screen name='SeleteSample' component={SeleteSample} />
         <Stack.Screen name='AlignContent' component={AlignContent} />
         <Stack.Screen name='ToDoListHome' component={ToDoListHome} />
