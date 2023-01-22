@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
-export const CustomTextInput = ({ label, ...props}) => (
+export const CustomTextInput = ({ label, des}) => (
   <View style={styles.container}>
     <View style={styles.labelContainer}>
       <Text style={{color: 'white' ,fontWeight: '600' } }>{label}</Text>
@@ -9,8 +9,10 @@ export const CustomTextInput = ({ label, ...props}) => (
     <TextInput
     style={styles.textInput}
     keyboardType='default'
-    placeholder='Meet Customer'
+    placeholder= {des ?? ''}
     autoComplete='off'
+    // onSubmitEditing={value}
+
     />
   </View>
 );
